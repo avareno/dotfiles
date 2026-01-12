@@ -1,19 +1,19 @@
 return {
 
-	-- LuaSnip configuration for snippets
-	{
-		"L3MON4D3/LuaSnip",
-		config = function()
-			local ls = require("luasnip")
+    -- LuaSnip configuration for snippets
+    {
+        "L3MON4D3/LuaSnip",
+        config = function()
+            local ls = require("luasnip")
 
-			-- Define snippets
-			local ls = require("luasnip")
+            -- Define snippets
+            local ls = require("luasnip")
 
-			-- Define snippets
-			ls.add_snippets("html", {
-				ls.parser.parse_snippet(
-					"html",
-					[[
+            -- Define snippets
+            ls.add_snippets("html", {
+                ls.parser.parse_snippet(
+                    "html",
+                    [[
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -26,13 +26,13 @@ return {
     </body>
     </html>
   ]]
-				),
-			})
+                ),
+            })
 
-			ls.add_snippets("php", {
-				ls.parser.parse_snippet(
-					"php",
-					[[
+            ls.add_snippets("php", {
+                ls.parser.parse_snippet(
+                    "php",
+                    [[
     <?php
     /**
      * ${1:Description}
@@ -50,11 +50,11 @@ return {
     </body>
     </html>
   ]]
-				),
-			})
-			-- Load the snippets
-			ls.filetype_extend("html", { "html" })
-			ls.filetype_extend("php", { "php" })
-		end,
-	},
+                ),
+            })
+            -- Load the snippets
+            ls.filetype_extend("html", { "html" })
+            ls.filetype_extend("php", { "php" })
+        end,
+    },
 }

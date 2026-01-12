@@ -1,11 +1,10 @@
-return
-{
-  "folke/tokyonight.nvim",
-  name="tokyonight",
-  priority = 1000,
-  config = function()
-  vim.cmd.colorscheme "tokyonight"
-  end
+return {
+    "folke/tokyonight.nvim",
+    name = "tokyonight",
+    priority = 1000,
+    config = function()
+        vim.cmd.colorscheme("tokyonight")
+    end,
 }
 --Eldenritch theme
 -- {
