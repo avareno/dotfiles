@@ -1,11 +1,10 @@
 return {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    event = { "BufReadPost", "BufNewFile" }, -- ADDED: Load on file open
+    lazy = false,
+    priority = 1000,
     config = function()
-        -- Treesitter configuration
-        local ts_config = require("nvim-treesitter.configs")
-        ts_config.setup({
+        require("nvim-treesitter").setup({   -- ← changed this line
             auto_install = true,
             ensure_installed = {
                 "lua",
@@ -22,7 +21,7 @@ return {
             },
             highlight = {
                 enable = true,
-                additional_vim_regex_highlighting = false, -- Tree-sitter only
+                additional_vim_regex_highlighting = false,
             },
             indent = {
                 enable = true,
