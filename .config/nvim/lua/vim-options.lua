@@ -2,6 +2,11 @@ vim.g.mapleader = " "
 vim.wo.relativenumber = true
 vim.opt.number = true
 
+-- Disable providers
+vim.g.loaded_node_provider = 0
+vim.g.loaded_perl_provider = 0
+vim.g.loaded_ruby_provider = 0
+
 --luasnip binds
 vim.api.nvim_set_keymap("i", "<C-k>", "<Plug>luasnip-expand-or-jump", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("s", "<C-k>", "<Plug>luasnip-expand-or-jump", { noremap = true, silent = true })
