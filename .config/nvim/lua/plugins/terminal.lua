@@ -40,11 +40,6 @@ return {
         { "akinsho/toggleterm.nvim", version = "*", config = true },
     },
 
-    -- Treesitter
-    {
-        "nvim-treesitter/nvim-treesitter",
-    },
-
     -- Which-key
     {
         "folke/which-key.nvim",
