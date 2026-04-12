@@ -4,7 +4,7 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-        require("nvim-treesitter").setup({   -- ← changed this line
+        require("nvim-treesitter.configs").setup({
             auto_install = true,
             ensure_installed = {
                 "lua",

@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.opt.termguicolors = true
 vim.wo.relativenumber = true
 vim.opt.number = true
 
